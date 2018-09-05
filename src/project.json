@@ -1,0 +1,34 @@
+[
+  {
+    "title": "MrHezekiah.github.io",
+    "description": "",
+    "imageUrl": "",
+    "thumbnailUrl": "",
+    "projectUrl": "https://github.com/MrHezekiah/MrHezekiah.github.io",
+    "tags": ["html", "css"]
+  },
+  {
+    "title": "Weekly Showcase",
+    "description": "",
+    "imageUrl": "",
+    "thumbnailUrl": "",
+    "projectUrl": "https://github.com/MrHezekiah/WeeklyShowcase",
+    "tags": ["html", "css"]
+  },
+  {
+    "title": "project-hangman",
+    "description": "",
+    "imageUrl": "",
+    "thumbnailUrl": "",
+    "projectUrl": "https://github.com/MrHezekiah/project-hangman",
+    "tags": ["javascript", "html", "sass" "eslintrc"]
+  },
+  {
+    "title": "tic-tac-toe",
+    "description": "",
+    "imageUrl": "",
+    "thumbnailUrl": "",
+    "projectUrl": "https://github.com/MrHezekiah/tic-tac-toe",
+    "tags": ["javascript", "sass", "yarn"]
+  }
+]
