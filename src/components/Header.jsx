@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 
-class Header extends Component{
+class Header extends React.Component{
     render(){
         return(
             <Fragment>
