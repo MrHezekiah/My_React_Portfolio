@@ -7,7 +7,7 @@ class Footer extends React.Component{
         return(
             <Fragment>
                 <footer>
-                    Footer
+                    <p>&copy;2018 Darth Vader</p>
                 </footer>
             </Fragment>
         )

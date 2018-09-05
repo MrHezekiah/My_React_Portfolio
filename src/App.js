@@ -1,17 +1,21 @@
 import React, { Fragment } from 'react';
+import {BrowserRouter} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
 
+import About from './views/About'
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 class App extends React.Component {
   render() {
     return (
-      <Fragment>
-        <Header />
-        <Footer />
-      </Fragment>
+      <BrowserRouter>
+        <Fragment>
+          <Header />
+          <Footer />
+        </Fragment>
+      </BrowserRouter>
     );
   }
 }
