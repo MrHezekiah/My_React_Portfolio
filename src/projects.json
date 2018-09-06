@@ -21,7 +21,7 @@
     "imageUrl": "",
     "thumbnailUrl": "",
     "projectUrl": "https://github.com/MrHezekiah/project-hangman",
-    "tags": ["javascript", "html", "sass" "eslintrc"]
+    "tags": ["javascript", "html", "sass", "eslintrc"]
   },
   {
     "title": "tic-tac-toe",

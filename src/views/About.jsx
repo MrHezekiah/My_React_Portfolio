@@ -7,9 +7,7 @@ class About extends React.Component{
 
   render(){
     return(
-      <Fragment class="container text-justify bg-dark text-white my-5 profile">
-        <div class="row">
-          <div class="col-md-6 card bg-info bg-transparent my-3">
+      <Fragment>
             <h4>Profile</h4>
             <p id="about">With an analytic and information systems educational background,
                I am acquainted with statistical analysis and theoretical findings,
@@ -31,9 +29,8 @@ class About extends React.Component{
                 <li>Knowledge</li>
                 <li>Travel</li>
               </ul>
-          </div>
 
-          <div class="col-md-6 card bg-info bg-transparent my-3">
+          <div>
             <h4>Education & Employment</h4>
               <ul>
                 <li>2004 - 2008: Manchester Metropolitan University (Bsc. Business Economics)</li>
@@ -42,7 +39,6 @@ class About extends React.Component{
                 <li>2010 - 2016: The National Health Service</li>
               </ul>
           </div>
-        </div>
       </Fragment>
     )
   }
