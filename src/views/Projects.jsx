@@ -1,54 +1,35 @@
 import React, {Fragment} from 'react';
 import {Link} from 'react-router-dom';
 import projects from '../projects.json';
+import {CardDeck, Card, CardTitle, CardBody, Button, Badge} from 'reactstrap';
 
 class Projects extends React.Component{
   componentDidMount(){
     document.title = 'Projects | Isaac\'s website';
   }
-
   render(){
     return(
       <Fragment>
-        <div>
-         <h3>Javascript</h3>
-         <p>
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-           eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-           eiusmod tempor incididunt ut labore et dolore magna aliqua
-         </p>
-        </div>
-
-
-        <div>
-         <h3>Css</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div>
-          <h3>Html</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-
-        <div>
-          <h3>Sass</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-             eiusmod tempor incididunt ut labore et dolore magna aliqua
-           </p>
-        </div>
+        <CardDeck>
+          {projects.map((project, i) => (
+            <Card key={i}>
+              <CardBody>
+                <CardTitle className="h3">
+                  {project.title}
+                </CardTitle>
+              </CardBody>
+                <img width="100%" src={project.thumbnail} alt={project.title}/>
+              <CardBody>
+              <div className="tags">
+                {project.tags.map(tag => (
+                  <Badge key={tag} color="primary" pill>{tag}</Badge>
+                ))}
+              </div>
+              <Link className="btn btn-primary" to={`/projects/${i}`}>See project</Link>
+            </CardBody>
+          </Card>
+          ))}
+        </CardDeck>
     </Fragment>
     )
   }
