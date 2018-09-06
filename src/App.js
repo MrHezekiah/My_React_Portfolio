@@ -3,7 +3,10 @@ import {BrowserRouter} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-import About from './views/About'
+import About from './views/About';
+import Contact from './views/Contact';
+import Home from './views/Home';
+import Projects from './views/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
